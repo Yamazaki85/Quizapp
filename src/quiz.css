@@ -1,0 +1,39 @@
+.main {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: blue;
+}
+.question-box {
+  display: flex;
+  background-color: green;
+  justify-content: center;
+}
+
+.answer-boxes {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+
+.tf-boxes {
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+  width: 80%;
+}
+
+.truebox {
+  background-color: purple;
+}
+
+.falsebox {
+  background-color: yellow;
+}
