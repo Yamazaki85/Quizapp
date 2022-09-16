@@ -1,5 +1,5 @@
 .main {
-  background-color: red;
+  background-color: aquamarine;
   width: 100vw;
   height: 100vh;
 }
@@ -9,31 +9,57 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: blue;
+  /* background-color: blue; */
 }
 .question-box {
   display: flex;
-  background-color: green;
+  /* background-color: green; */
+  margin-top: 10%;
   justify-content: center;
 }
 
 .answer-boxes {
   display: flex;
   justify-content: center;
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 .tf-boxes {
   display: flex;
   justify-content: space-around;
-  background-color: pink;
+  /* background-color: pink; */
   width: 80%;
 }
 
 .truebox {
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 .falsebox {
-  background-color: yellow;
+  /* background-color: yellow; */
+}
+.btn {
+  width: 150px;
+  height: 50px;
+
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  :hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+  }
 }

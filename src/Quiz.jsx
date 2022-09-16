@@ -13,10 +13,10 @@ const Quiz = () => {
         <div className="answer-boxes">
           <div className="tf-boxes">
             <div className="truebox">
-              <h1>true</h1>
+              <button className="btn">true</button>
             </div>
             <div className="falsebox">
-              <h1>false</h1>
+              <button className="btn">false</button>
             </div>
           </div>
         </div>
