@@ -26,19 +26,14 @@ const Quiz = () => {
       answer: false,
     },
   ];
-  let idx = 0;
-  const [index, setIndex] = useState(idx);
+
+  const [index, setIndex] = useState(0);
   const [question, setQuestion] = useState(questions[0].question);
 
-  const incrementQuestion = () => {
-    idx += 1;
-    setIndex(idx);
-  };
-
   const updateQuestion = () => {
-    console.log(idx);
-    setIndex(incrementQuestion());
-    setQuestion(questions[idx].question);
+    console.log(index);
+    setIndex(index + 1);
+    setQuestion(questions[index].question);
   };
 
   return (
