@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 
 import "./quiz.css";
@@ -30,11 +30,18 @@ const Quiz = () => {
   const [index, setIndex] = useState(0);
   const [question, setQuestion] = useState(questions[index].question);
 
+  useEffect(() => {
+    // action on update of movies
+  }, []);
+
   const updateQuestion = () => {
     console.log("index", index);
-    const nextQuestion = index + 1;
-    setIndex(nextQuestion);
-    console.log("updatedIndex", index);
+    if (index === questions.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+      console.log("updatedIndex", index);
+    }
     setQuestion(questions[index].question);
     console.log("question", question);
   };
