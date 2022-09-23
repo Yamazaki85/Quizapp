@@ -30,21 +30,17 @@ const Quiz = () => {
   const [index, setIndex] = useState(0);
   const [question, setQuestion] = useState(questions[index].question);
 
-  useEffect(() => {
-    // action on update of movies
-  }, []);
-
   const updateQuestion = () => {
-    console.log("index", index);
     if (index === questions.length - 1) {
       setIndex(0);
     } else {
       setIndex(index + 1);
-      console.log("updatedIndex", index);
     }
-    setQuestion(questions[index].question);
-    console.log("question", question);
   };
+
+  useEffect(() => {
+    setQuestion(questions[index].question);
+  }, [updateQuestion]);
 
   return (
     <div className="main">
